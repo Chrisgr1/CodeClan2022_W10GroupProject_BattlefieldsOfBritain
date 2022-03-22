@@ -1,0 +1,146 @@
+body {
+  font-family: 'Alegreya', serif;
+  width: 100%;
+  height: 100%;
+  background-image: url("./styles/images/photo-1597113366853-fea190b6cd82.jpeg");
+  background-repeat: repeat;
+  /* overflow: hidden; */
+}
+
+.vignette {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  box-shadow: 0 0 200px rgba(122, 69, 0, 0.884) inset;
+}
+
+.leaflet-container {
+  /* margin-top: 1em;
+  margin-bottom: 1em;
+  margin-right: 1em;
+  margin-left: 2.5em; */
+  /* width: 85%; */
+  height: 94%;
+  margin: 2em;
+  
+  box-shadow: 0px 0px 15px #3575cb;
+  border-radius: 15px;
+}
+
+.mainAppContainer {
+  display: grid;
+  grid-gap: 0;
+  grid-template-columns: 6fr 4fr;
+  grid-template-areas: "mapContainer parchment" ;
+  padding: 0 1.5em;
+  /* grid-template-rows: 1fr 1fr 1fr; */
+}
+
+.mapContainer {
+  display: grid;
+  grid-template-columns: 4fr 1fr;
+  grid-template-areas: "map slider" ;
+  grid-area: mapContainer;
+  /* display: flex; */
+  /* align-items: center;
+  justify-content: center;  */
+}
+
+.map {
+  /* display: grid; */
+  /* grid-template-columns: 3fr 1fr; */
+  grid-column-gap: 0;
+  text-align: center;
+  /* margin-left: 2em; */
+  /* margin-top: -0.4em; */
+  /* padding: 2em; */
+  height: 100%;
+  grid-area: map;
+  /* margin: 0; */
+  /* padding: 0; */
+  /* width: 60vw; */
+  /* height: 10vh; */
+  /* min-width: 50%; */
+  justify-content: space-around;
+}
+
+.slider{
+  display: flex;
+  grid-area: slider;
+  align-items: center;
+  justify-content: center;
+
+}
+
+.slider p {
+  text-align: center;
+}
+
+.mainInfoContainer {
+  /* background-image: url("./styles/images/photo-1597113366853-fea190b6cd82.jpeg"); */
+/* margin: auto; */
+  grid-area: parchment;
+  align-items: center;
+  justify-content: center;
+
+}
+
+.innerInfoContainer {
+  /* grid-area: 1/2/2/3; */
+  /* height: 80vh; */
+  /* width: 60vw; */
+  min-height: 96vh;
+  /* min-width: 50vw; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* margin-top: 2em;
+  margin-left: -15em; */
+  
+  
+  /* min-width: ; */
+
+}
+
+.parchmentBackground{
+  background-image: url("./styles/images/txg5nj.png");
+  background-repeat: no-repeat;
+  /* background-size: cover; */
+  height: 90vh;
+  /* width: 50vw; */
+  text-align: center;
+  /* margin: auto; */
+}
+
+.img {
+  height: 22vh;
+  border-radius: 15px;
+}
+
+.whereTheTextInfoIsDisplayedOn{
+  padding: 3em;
+  margin-top: 1em;
+  margin-left: 2em;
+
+}
+
+.scroll {
+  display: block; 
+  border: 0px solid red;
+  padding: 5px;
+  margin-bottom: 5px;
+  width: 20vw;
+  height: 27vh; 
+  overflow-y: scroll;
+  overflow-x: hidden;
+  z-index: 2;
+  font-size: 20px;
+  /* overflow: auto; */
+}
+
+.scroll:hover {
+  
+
+}
